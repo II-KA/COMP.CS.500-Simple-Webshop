@@ -17,7 +17,6 @@
         "jsdoc"
     ],
     "rules":{
-        // maybe your other rules...
         "jsdoc/require-param-description": "error",
         "jsdoc/check-types": "error",
         "jsdoc/require-returns-description": "error"
