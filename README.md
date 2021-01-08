@@ -56,6 +56,7 @@ Some of the project structure was provided by course staff. Below are the files 
 │   ├── requestUtils.js     --> utility functions for request processing
 │   └── responseUtils.js    --> utility functions for sending requests
 ├── test
-│   └── own                 --> our UI tests, can be run with the command: npx mocha --require test/setup.test.js --exit --timeout 10000 test/own/ourOwnTests.js
+│   └── own                 --> our UI tests, can be run with the command: 
+npx mocha --require test/setup.test.js --exit --timeout 10000 test/own/ourOwnTests.js
 
 ```
