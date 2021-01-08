@@ -1,6 +1,6 @@
 # WebDev1 coursework assignment
 
-A web shop with vanilla HTML, CSS. Assignment document can be viewed [here](https://docs.google.com/document/d/1CZQD7p1iZL58KqRfHiVtyYf3V10db09oLxIOy3fRrkI/edit#heading=h.qx21vgebscza)
+A web shop with vanilla HTML, CSS. Assignment document can be viewed [here](https://docs.google.com/document/d/1CZQD7p1iZL58KqRfHiVtyYf3V10db09oLxIOy3fRrkI)
 
 In short
 Non-logged-in:
