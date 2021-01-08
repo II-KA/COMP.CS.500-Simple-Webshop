@@ -1,0 +1,255 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  /* prevent side-scroll */
+  overflow-x: hidden;
+}
+
+body {
+  font-size: 1.6rem;
+  /* Sonarqube requires at least 1 generic font family. */
+  font-family: 'Montserrat', 'sans-serif';
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+main,
+footer {
+  width: 100vw;
+  padding-left: 2vw;
+}
+
+main {
+  padding-top: 5vh;
+  padding-bottom: 1vh;
+}
+
+/* So buttons wont be too
+ * close to others. */
+.item-row > div {
+  padding-bottom: 0.5vh;
+}
+#place-order-button {
+  margin-top: 0.5vh;
+}
+
+header,
+footer {
+  background-color: #eee;
+}
+
+footer {
+  font-size: 1.5em;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 4%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(34, 34, 36);
+  color: white;
+}
+
+.nav-links {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  background-color: rgb(34, 34, 36);
+  align-items: center;
+}
+
+.nav-links li {
+  display: block;
+  padding: 0.7vh;
+  width: 100vw;
+  border-right: 1px solid #bbb;
+  font-size: 1.5em;
+  overflow-wrap: break-word;
+  text-align: center;
+}
+
+.nav-links li a {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+}
+
+.nav-links li:last-child {
+  border-right: none;
+}
+
+.nav-links li:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+.active {
+  background-color: #317A87;
+}
+
+.title {
+  padding: 15rem 2rem;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+/* centering the forms */
+#modify-user, #forms-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 700px;
+}
+/* preventing overflow */
+#modify-user>form, #forms-container>form {
+  width: 95%;
+}
+
+.form {
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  min-width: 30rem;
+  max-width: 700px;
+  padding: 1rem;
+  border-radius: 5px;
+  border: 1px solid grey;
+}
+
+.form-group {
+  height: 5rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 0.6fr 3fr;
+  margin-bottom: 1rem;
+}
+
+.second-column {
+  display: grid;
+  grid-column: 2;
+}
+
+input {
+  padding: 0.5rem;
+  font-size: 1.1em;
+}
+
+label {
+  justify-self: right;
+  align-self: center;
+  font-size: 1.2em;
+  text-align: right;
+}
+
+button {
+  /* Brighter green did not meet
+   * WCAG AA standards. */
+  background-color: #2A8370;
+  color: white;
+  padding: 1.5rem 2rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1em;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.background-lightgreen {
+  background-color: lightgreen;
+}
+
+.background-red {
+  background-color: red;
+}
+
+#users-container .item-row, #products-container .item-row {
+  display: inline-block;
+  width: 33%;
+  padding-bottom: 50px;
+}
+
+#products-container .item-row {
+  padding-right: 100px;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1300px){
+  #products-container .item-row {
+    width: 49%;
+  }
+}
+
+@media screen and (max-width: 1000px){
+  #users-container .item-row {
+    width: 49%;
+  }
+}
+
+@media screen and (max-width: 850px){
+  #products-container .item-row {
+    width: 100%;
+  }
+  /* Hamburger menu */
+  .nav-links {
+    visibility: hidden;
+  }
+  .navbar {
+    position: fixed;
+    top: 0;
+    height: 5%;
+    width: 100%;
+    justify-content: left;
+  }
+  .navbar > label {
+    padding-left: 2vw;
+    font-size: 1.5em;
+  }
+  #menuToggle {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 4.5%;
+    visibility: visible;
+    opacity: 0;
+    cursor: pointer;
+  }
+  input:checked ~ .nav-links
+  {
+    visibility: visible;
+    top: 5%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 600px){
+  #users-container .item-row {
+    width: 100%;
+  }
+}
