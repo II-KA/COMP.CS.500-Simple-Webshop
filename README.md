@@ -1,26 +1,20 @@
-# WebDev1 coursework assignment
+# A super simple web shop with vanilla HTML, CSS
 
-A web shop with vanilla HTML, CSS. Assignment document can be viewed [here](https://docs.google.com/document/d/1CZQD7p1iZL58KqRfHiVtyYf3V10db09oLxIOy3fRrkI)
-
-In short
+## Feares
 Non-logged-in:
 - able to register as a new customer
+
 Customers:
 - able to add products to cart, modify amount of products in cart and make an order
 - able to see their own orders
+
 Admins:
 - management of users & products (addition, deletion, modification)
 - able to see all orders
 
-## On Heroku
+## The project structure
 
-Feel free to check the assignment out at [Heroku](https://webdevgroup61onlineshop.herokuapp.com/index.html)
-Login with customer (customer@email.com, 0987654321) or admin (admin@email.com, 1234567890) credentials. Please don't tinker with the database too inappropriately.
-
-
-### The project structure
-
-Some of the project structure was provided by course staff. Below are the files our group were responsible for.
+Some of the project structure was provided by course staff. Below are the files our group was responsible for.
 
 ```
 .
